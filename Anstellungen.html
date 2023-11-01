@@ -359,6 +359,7 @@ display: none;
 
 <div id="lade-packages" class="section level1">
 <h1>Lade Packages</h1>
+<p>Test, Datenpakete zu laden</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ## ✔ dplyr     1.1.3     ✔ readr     2.1.4
@@ -376,7 +377,8 @@ library(lubridate)</code></pre>
 </div>
 <div id="lade-csv-datei" class="section level1">
 <h1>Lade csv Datei</h1>
-<pre class="r"><code>read_csv2(&quot;data/Lehrpersonen1.csv&quot;)</code></pre>
+<p>Die Datei kann nicht richtig geladen werden.</p>
+<pre class="r"><code>LP &lt;- read_csv2(&quot;data/Lehrpersonen1.csv&quot;)</code></pre>
 <pre><code>## ℹ Using &quot;&#39;,&#39;&quot; as decimal and &quot;&#39;.&#39;&quot; as grouping mark. Use `read_delim()` for more control.</code></pre>
 <pre><code>## Rows: 5096 Columns: 15
 ## ── Column specification ────────────────────────────────────────────────────────
@@ -386,29 +388,9 @@ library(lubridate)</code></pre>
 ## 
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre><code>## # A tibble: 5,096 × 15
-##    Buchungskreis    BuKr `OE Kurzb.` PersNr  Ans. Anredeschlüssel GebDatum BsGrd
-##    &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;    &lt;chr&gt;
-##  1 Gew. Berufssch…  7356 750GBW      600000     2 Herr            13.01.1… 23.08
-##  2 KS Zürcher Obe…  7316 740KZO      600001     4 Herr            27.11.1… 100.…
-##  3 Kantonsschule …  7325 740KZN      600002     4 Herr            23.02.1… 89.13
-##  4 Allgemeine Ber…  7359 750ABZ      600003     4 Frau            14.01.1… 30.77
-##  5 KS Hottingen Z…  7306 740KSH      600004     8 Herr            15.01.1… 76.09
-##  6 KS Zürcher Obe…  7316 740KZO      600005     6 Herr            15.08.1… 50.00
-##  7 ZAG Winterthur   7336 750ZAG      600006     5 Frau            18.08.1… 50.00
-##  8 KS Rämibühl, R…  7302 740KRR      600007    12 Herr            15.11.1… 57.69
-##  9 KS Hohe Promen…  7304 740KHP      600008     6 Frau            19.06.1… 30.77
-## 10 KS Büelrain Wi…  7314 740KBW      600009     3 Frau            10.02.1… 39.13
-## # ℹ 5,086 more rows
-## # ℹ 7 more variables: MAKrs &lt;dbl&gt;, `Planst. Kurzb.` &lt;chr&gt;,
-## #   Pers.Kategorie &lt;dbl&gt;, `St. Kurzb.` &lt;dbl&gt;, `GB/WB` &lt;chr&gt;,
-## #   `LB/obA/mbA` &lt;chr&gt;, Teilzeit &lt;dbl&gt;</code></pre>
 </div>
 <div id="daten-erkunden" class="section level1">
 <h1>Daten erkunden</h1>
-</div>
-<div id="daten-darstellen" class="section level1">
-<h1>Daten darstellen</h1>
 </div>
 
 

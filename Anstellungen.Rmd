@@ -25,7 +25,7 @@ Die Datei kann nicht richtig geladen werden.
 
 ```{r}
 
-read_csv2("data/Lehrpersonen1.csv")
+LP <- read_csv2("data/Lehrpersonen1.csv")
 
 
 ```
