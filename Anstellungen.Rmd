@@ -10,7 +10,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Lade Packages
-Test, Datenpakete zu laden
 
 ```{r lade-packages}
 library(tidyverse)
@@ -20,18 +19,43 @@ library(lubridate)
 
 ```
 
-# Lade csv Datei
-Die Datei kann nicht richtig geladen werden.
+# Lade csv Datei und speichere die Daten als Objekt. Danach Weiterarbeiten mit Daten, welche unter LP gespeichert sind
 
 ```{r}
 
 read_csv2("data/Lehrpersonen1.csv")
 
-
 ```
 # Daten erkunden
-```{r}
 
+```{r}
+nrow(LP)
+ncol(LP)
+dim(LP)
+glimpse(LP)
 ```
 
+# Titel der Spalten anpassen und eine Spalte anhängen
+Idee: Spalte anhängen, die ausgibt, ob Teilzeit oder nicht
+Idee: Spalte anhängen, die Alter ausgibt
+Idee: Spalte anhängen, die Alter in Kategorie einteilt
+
+```{r}
+LPwork <- LP %>% 
+rename(Anrede = Anredeschlüssel, OrgEinheit = "OE Kurzb.", Planstelle = "Planst. Kurzb.", Kategorie = "Pers.Kategorie", Anst ="Ans.", Stelle = "St. Kurzb.", Typ = "GB/WB", Art = "LB/obA/mbA", MK = MAKrs)
+
+view(LPwork)
+```
+
+
+# Daten filtern/selektieren
+Idee: üben, an welcher Schule wieviele Sätze pro Vertragstyp etc.
+
+```{r}
+
+
+
+  ```
+
+# Graph darstelleln
 
