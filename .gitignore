@@ -41,6 +41,7 @@ vignettes/*.pdf
 
 # Ignoriere folgende Dateien
 *.csv
+*.xls
 README.html
 
 # pkgdown site
